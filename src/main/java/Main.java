@@ -15,6 +15,9 @@ public class Main {
             Example example = objectMapper.readValue(new File("C:\\Users\\Helix2\\Downloads\\example.json"), Example.class);
             System.out.println(example);
 
+            Employee employee = objectMapper.readValue("C:\\Users\\Helix2\\Downloads\\employee.json", Employee.class);
+            System.out.println(employee);
+
 
         } catch (IOException e){
             e.printStackTrace();
